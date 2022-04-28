@@ -1,0 +1,19 @@
+.columns:not(.is-desktop) {
+    display: -webkit-box;
+    display: flex;
+}
+
+.columns.is-centered {
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.columns:last-child {
+    margin-bottom: -0.75rem;
+}
+
+.columns {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    margin-top: -0.75rem;
+}
