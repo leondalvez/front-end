@@ -17,3 +17,12 @@
     margin-right: -0.75rem;
     margin-top: -0.75rem;
 }
+
+#skill>.card {
+    flex: 150px;
+    m-1;
+}
+
+#educacion>.card {
+    flex: 150px;
+}
