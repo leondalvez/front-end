@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- LINKS -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -19,23 +21,23 @@
 
     <!-- Barra de Navegación- navBar-->
 
-    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-warning">
+    <nav id="navbar" class="navbar navbar-expand-md sticky-top navbar-dark">
         <div class="container-fluid">
             <div class="navbar-brand">
                 <img class="d-inline mb-1" src="recursos/argentinaPrograma.png" width="100" alt="Logo Argentina Programa">
                 <a class="text-light d-inline ms-2 fs-6-text text-decoration-none " href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa">#YoProgramo</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#links-navegacion" aria-controls="links-navegacion" aria-expanded="false" aria-label="Menú de navegación">
-                <span class="navbar-toggler-icon btn-danger"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="links-navegacion">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link  text-dark" href="#descripcion">Sobre mi</a></li>
-                    <li class="nav-item"><a class="nav-link  text-dark" href="#experiencia">Experiencia</a></li>
-                    <li class="nav-item"><a class="nav-link  text-dark" href="#educacion">Educación</a></li>
-                    <li class="nav-item"><a class="nav-link  text-dark" href="#habilidades">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link  text-dark" href="#proyectos">Proyectos</a></li>
+                <ul id="menu" class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#descripcion">Sobre mi</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#educacion">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#proyectos">Proyectos</a></li>
                 </ul>
             </div>
 
@@ -50,7 +52,7 @@
 
     <!-- Carrusel de imagen - carousel-->
 
-    <div class="carousel slide " id="mainSlader" data-ride="carousel">
+    <div class="carousel slide x-left-2 x-rigth-2" id="mainSlader" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="recursos/Recurso1.png" alt="Slice1" class="d-block w-100">
@@ -68,14 +70,14 @@
 
     <!--Saludo - Greetins -->
 
-    <section class="bg-warning is-medium is-primary has-text-centered is-long mt-2 mb-2 p-3">
+    <section class="is-medium is-primary has-text-centered is-long mt-2 mb-2 p-3">
 
         <div class="container">
 
             <div class="columns is-centered ">
                 <div class="columns is-trhee-fifths">
-                    <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile text-center">
-                        Hi, I’m Leo. Nice to meet you.
+                    <h1 class="display-4 mt-3 title is-spaced  text-center text-white">
+                        Bienvenido a mi porfolio
                     </h1>
 
                 </div>
@@ -87,8 +89,8 @@
 
     <!-- Sobre, mi - About me -->
 
-    <div id="descripcion" class="container-fluid bg-danger">
-        <div class="container w-50 pl-5 bg-danger">
+    <div id="descripcion" class="container-fluid">
+        <div class="container w-50 pl-5">
 
             <div class="row align-items-left">
                 <div class="col-sm">
@@ -96,11 +98,11 @@
                 </div>
 
                 <div class="col-sm-8 p-3 text-light text-center mt-3">
-                    <h1 class="display-1">
+                    <h1 id="nombre" class="display-1">
                         <strong>Leonardo Alvez</strong>
                     </h1>
 
-                    <h1 class="display-3 text-warning">
+                    <h1 class="display-3">
                         <strong>Programador FullStack Junior</strong>
                     </h1>
                 </div>
@@ -108,9 +110,11 @@
             </div>
         </div>
 
-        <div id="descripcion" class="alert alert-warning" role="alert">
-            <strong> Mi nombre es Leonardo Alvez y soy Programador Full-stack Junior. Me considero una persona muy curiosa por naturaleza y siempre me gusta descubrir cosas nuevas. Actualmente estudio una tecnicatura en Diseño Gráfico y comunicación visual, y trabajo como encargado de comunicación
-                del Instituto del Alimento de Rosario. Quiero trabajar en programación para poder crecer profesionalmente.</strong>
+        <div class=container-fluid id="displayDescripcion">
+            <h1 class="display-7 fs-3 p-3">
+                <strong> Mi nombre es Leonardo Alvez y soy Programador Full-stack Junior. Me considero una persona muy curiosa por naturaleza y siempre me gusta descubrir cosas nuevas. Actualmente estudio una tecnicatura en Diseño Gráfico y comunicación visual, y trabajo como encargado de comunicación
+                    del Instituto del Alimento de Rosario. Quiero trabajar en programación para poder crecer profesionalmente.</strong>
+            </h1>
         </div>
 
 
@@ -118,13 +122,13 @@
 
     <!-- Banner Experiencia - Banner experience-->
 
-    <section id="experiencia" class="bg-warning is-medium is-primary has-text-centered is-long mt-2 mb-2 p-3">
+    <section id="experiencia" class="is-medium is-primary has-text-centered is-long mt-2 mb-2 p-3">
 
         <div class="container">
 
             <div class="columns is-centered ">
                 <div class="columns is-trhee-fifths">
-                    <h1 class="display-4 text-center"><strong>Conoce mi Experiencia</strong></h1>
+                    <h1 id="miexperiencia" class="display-4 text-center mt-3"><strong>Conoce mi Experiencia</strong></h1>
                 </div>
             </div>
 
@@ -132,33 +136,33 @@
 
     </section>
 
-    <div id="experiencia" class="container-fluid bg-danger p-3">
+    <div id="lasExperiencias" class="container-fluid p-3">
 
         <div class="card-group">
-            <div class="card bg-warning m-1">
+            <div class="card m-1" id="fondoExperiencia">
                 <img src="recursos/logo_version_2.jpg" class="card-img-top" alt="Logo Municipalidad de Rosario">
                 <div class="card-body">
                     <h5 class="card-title">Encargado de comunicación</h5>
                     <p class="card-text">Encargado de la agenda de comunicaciónexterna del Instituto del Alimento.</p>
-                    <p class="card-text"><small class="text-muted">Desde Septiembre 2021 a la actualidad.</small></p>
+                    <p class="card-text"><small>Desde Septiembre 2021 a la actualidad.</small></p>
                 </div>
             </div>
-            <div class="card bg-warning m-1">
+            <div class="card m-1" id="fondoExperiencia">
                 <img src="recursos/logo_version_2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Administrativo en salud</h5>
                     <p class="card-text">Administrativo de atención primaria de la salud. <br>Referencias: Maria de los Angeles Smidth (Jefa del Centro de Salud Sur) <br>Contacto: e-mail de Maria
                     </p>
-                    <p class="card-text"><small class="text-muted">Febrero del 2015 a Agosto 2021</small></p>
+                    <p class="card-text"><small>Febrero del 2015 a Agosto 2021</small></p>
                 </div>
             </div>
-            <div class="card bg-warning m-1">
+            <div class="card m-1" id="fondoExperiencia">
                 <img src="recursos/Hard_and_soft/vivalapizza.jpg" class="card-img-top" alt="Logo Viva La Pizza">
                 <div class="card-body">
                     <h5 class="card-title">Camarero</h5>
                     <p class="card-text"> Camarero Turno Noche. <br>Referencias: Claudio Casalegno (Encargado) <br>Contacto: e-mail de claudio
                     </p>
-                    <p class="card-text"><small class="text-muted">Agosto 2013 a Enero 2015</small></p>
+                    <p class="card-text"><small>Agosto 2013 a Enero 2015</small></p>
                 </div>
             </div>
         </div>
@@ -173,13 +177,13 @@
 
     <section id="educacion">
 
-        <section class="bg-warning is-medium is-primary has-text-centered is-long mt-2 mb-2 p-3">
+        <section class="is-medium is-primary has-text-centered is-long mt-2 mb-2 p-3">
 
             <div class="container">
 
                 <div class="columns is-centered ">
                     <div class="columns is-trhee-fifths">
-                        <h1 class="display-4 text-center"><strong>Mi Educación</strong></h1>
+                        <h1 class="display-4 text-center text-white mt-3"><strong>Mi Educación</strong></h1>
                     </div>
                 </div>
 
@@ -189,7 +193,7 @@
 
         <div class="card-group mt-2 mb-2 p-3" id="educacion">
 
-            <div class="card bg-danger text-light m-1">
+            <div class="card text-light m-1" id="edu1">
                 <img src="recursos/argentinaPrograma.png" class="card-img-top" alt="Logo argentinaPrograma">
                 <div class="card-body">
                     <h5 class="card-title">Programador FullStack Junior</h5>
@@ -197,7 +201,7 @@
                 </div>
             </div>
 
-            <div class="card bg-warning text-dark m-1">
+            <div class="card m-1" id="edu2">
                 <img src="recursos/Hard_and_soft/Crehana.png" class="card-img-top" alt="Logo Crehana">
                 <div class="card-body">
                     <h5 class="card-title">Ilustración Digital</h5>
@@ -206,15 +210,15 @@
             </div>
 
 
-            <div class="card bg-danger text-light m-1">
+            <div class="card m-1">
                 <img src="recursos/Hard_and_soft/isidroaliau.jpg" class="card-img-top" alt="Foto Escuela">
-                <div class="card-body">
+                <div class="card-body" id="edu1">
                     <h5 class="card-title">Isidro Aliau</h5>
                     <p class="card-text">Primaria en la escuala Isidro Aliau Nº124</p>
                 </div>
             </div>
 
-            <div class="card bg-warning text-dark m-1">
+            <div class="card  m-1" id="edu2">
                 <img src="recursos/Hard_and_soft/649.jpg" class="card-img-top" alt="Logo esc.649">
                 <div class="card-body">
                     <h5 class="card-title">Don Jose de San Martin</h5>
@@ -222,7 +226,7 @@
                 </div>
             </div>
 
-            <div class="card bg-danger text-light m-1">
+            <div class="card m-1" id="edu1">
                 <img src="recursos/Hard_and_soft/Facu_UNR_315x81.png" class="card-img-top" alt="Logo Psicologia unr">
                 <div class="card-body">
                     <h5 class="card-title">Facultad de Psicología</h5>
@@ -230,7 +234,7 @@
                 </div>
             </div>
 
-            <div class="card bg-warning text-dark m-1">
+            <div class="card m-1" id="edu2">
                 <img src="recursos/Hard_and_soft/epav.jpg" class="card-img-top" alt="Logo EPAV">
                 <div class="card-body">
                     <h5 class="card-title">Escuela Provincial de Artes Visuales</h5>
@@ -250,13 +254,13 @@
 
 
 
-        <section class="bg-warning is-medium is-primary has-text-centered is-long mt-2 mb-2 p-3">
+        <section class="is-medium is-primary has-text-centered is-long mt-2 mb-2 p-3">
 
             <div class="container">
 
                 <div class="columns is-centered ">
                     <div class="columns is-trhee-fifths">
-                        <h1 class="display-4 text-center"><strong>Hard and Soft Skill</strong></h1>
+                        <h1 class="display-4 text-center text-white mt3"><strong>Hard and Soft Skill</strong></h1>
                     </div>
                 </div>
 
@@ -265,6 +269,65 @@
         </section>
 
         <div class="card-group flex-wrap" id="skill">
+
+
+
+            <div class="card m-1">
+                <img src="recursos/Hard_and_soft/html5.png" class="card-img-top mt-2" alt="Logo HTML5">
+                <div class="card-body">
+                    <h5 class="card-title">HTML 5</h5>
+                    <p class="card-text">Ësta página comenzo como un simple html.</p>
+                </div>
+            </div>
+
+            <div class="card m-1">
+                <img src="recursos/Hard_and_soft/js.png" class="card-img-top p-2" alt="Logo JavaScript">
+                <div class="card-body">
+                    <h5 class="card-title">JavaScript</h5>
+                    <p class="card-text">Poseo conocimientos en JavaScript.</p>
+                </div>
+            </div>
+
+            <div class="card m-1">
+                <img src="recursos/Hard_and_soft/bootstrap.png" class="card-img-top p-2" alt="Logo Bootstrap">
+                <div class="card-body">
+                    <h5 class="card-title">Bootstrap</h5>
+                    <p class="card-text">Ésta página está construida en parte con Bootstrap.</p>
+                </div>
+            </div>
+
+            <div class="card m-1">
+                <img src="recursos/Hard_and_soft/css3.png" class="card-img-top mt-2" alt="Logo CSS3">
+                <div class="card-body">
+                    <h5 class="card-title">CSS3</h5>
+                    <p class="card-text">Ésta página está decorada en parte con técnicas CSS3.</p>
+                </div>
+            </div>
+
+            <div class="card m-1">
+                <img src="recursos/Hard_and_soft/angular.png" class="card-img-top mt-2" alt="Logo Angular">
+                <div class="card-body">
+                    <h5 class="card-title">Angular</h5>
+                    <p class="card-text">Ésta página está construida sobre el Framework de Angular.</p>
+                </div>
+            </div>
+
+            <div class="card m-1">
+                <img src="recursos/Hard_and_soft/mysql.png" class="card-img-top p-2" alt="Logo MySQL">
+                <div class="card-body">
+                    <h5 class="card-title">MySQL</h5>
+                    <p class="card-text">Ésta página tiene una base de datos construida en MySQL.</p>
+                </div>
+            </div>
+
+            <div class="card m-1">
+                <img src="recursos/Hard_and_soft/github.png" class="card-img-top p-2" alt="Logo Github">
+                <div class="card-body">
+                    <h5 class="card-title">Github</h5>
+                    <p class="card-text">El repositorio de ésta página podés encontrarlo haciendo click en <a class="text-white" href="https://github.com/leondalvez/trabajofinal">Github.</a></p>
+                </div>
+            </div>
+
             <div class="card m-1">
                 <img src="recursos/Hard_and_soft/Ai.png" class="card-img-top" alt="Logo de Illustrator">
                 <div class="card-body">
@@ -285,7 +348,7 @@
                 <img src="recursos/Hard_and_soft/Ae.png" class="card-img-top" alt="Logo After Efects">
                 <div class="card-body">
                     <h5 class="card-title">After Efects</h5>
-                    <p class="card-text">Tengo conocimientos básicoc en la producción de animaciones cortas.</p>
+                    <p class="card-text">Tengo conocimientos básicos en la producción de animaciones cortas.</p>
                 </div>
             </div>
 
@@ -297,62 +360,6 @@
                 </div>
             </div>
 
-            <div class="card m-1">
-                <img src="recursos/Hard_and_soft/html5.png" class="card-img-top" alt="Logo HTML5">
-                <div class="card-body">
-                    <h5 class="card-title">HTML 5</h5>
-                    <p class="card-text">Ësta página comenzo como un simple html.</p>
-                </div>
-            </div>
-
-            <div class="card m-1">
-                <img src="recursos/Hard_and_soft/js.png" class="card-img-top" alt="Logo JavaScript">
-                <div class="card-body">
-                    <h5 class="card-title">JavaScript</h5>
-                    <p class="card-text">Poseo conocimientos en JavaScript.</p>
-                </div>
-            </div>
-
-            <div class="card m-1">
-                <img src="recursos/Hard_and_soft/bootstrap.png" class="card-img-top" alt="Logo Bootstrap">
-                <div class="card-body">
-                    <h5 class="card-title">Bootstrap</h5>
-                    <p class="card-text">Ésta página está construida en parte con Bootstrap.</p>
-                </div>
-            </div>
-
-            <div class="card m-1">
-                <img src="recursos/Hard_and_soft/css3.png" class="card-img-top" alt="Logo CSS3">
-                <div class="card-body">
-                    <h5 class="card-title">CSS3</h5>
-                    <p class="card-text">Ésta página está decorada en parte con técnicas CSS3.</p>
-                </div>
-            </div>
-
-            <div class="card m-1">
-                <img src="recursos/Hard_and_soft/angular.png" class="card-img-top" alt="Logo Angular">
-                <div class="card-body">
-                    <h5 class="card-title">Angular</h5>
-                    <p class="card-text">Ésta página está construida sobre el Framework de Angular.</p>
-                </div>
-            </div>
-
-            <div class="card m-1">
-                <img src="recursos/Hard_and_soft/mysql.png" class="card-img-top" alt="Logo MySQL">
-                <div class="card-body">
-                    <h5 class="card-title">MySQL</h5>
-                    <p class="card-text">Ésta página tiene una base de datos construida en MySQL.</p>
-                </div>
-            </div>
-
-            <div class="card m-1">
-                <img src="recursos/Hard_and_soft/github.png" class="card-img-top" alt="Logo Github">
-                <div class="card-body">
-                    <h5 class="card-title">Github</h5>
-                    <p class="card-text">El repositorio de ésta página podés encontrarlo en <a href="https://github.com/leondalvez/trabajofinal">Github.</a></p>
-                </div>
-            </div>
-
         </div>
 
     </section>
@@ -361,13 +368,13 @@
 
     <section id="proyectos">
 
-        <section class="bg-warning is-medium is-primary has-text-centered is-long mt-2 mb-2 p-3">
+        <section class="is-medium is-primary has-text-centered is-long mt-2 mb-2 p-3">
 
             <div class="container">
 
                 <div class="columns is-centered ">
                     <div class="columns is-trhee-fifths">
-                        <h1 class="display-4 text-center"><strong>Mis Proyectos</strong></h1>
+                        <h1 class="display-4 text-center text-white mt-3"><strong>Mis Proyectos</strong></h1>
                     </div>
                 </div>
 
@@ -377,30 +384,30 @@
 
         <div class="card-group">
 
-            <div class="card text-white bg-success mb-3 m-1 p-4">
+            <div id="proyecto1" class="card mb-3 m-1 p-4">
                 <img src="recursos/argentinaPrograma.png" class="card-img-top" alt="Logo en negativo del Argentina Programa">
                 <div class="card-body">
                     <h5 class="card-title">Porfolio Argentina Programa</h5>
                     <p class="card-text">Ésta página es un proyecto final del Argentina Programa para adquirir certificación en Programación FullStack Junior</p>
-                    <p><small><a href="https://github.com/leondalvez/trabajofinal" class="text-white">Podés hacer click sobre éste link para conocer éste Proyecto</a></small> </p>
+                    <p><small><a href="https://github.com/leondalvez/trabajofinal">Podés hacer click sobre éste link para conocer éste Proyecto</a></small> </p>
                 </div>
             </div>
 
-            <div class="card text-white bg-primary mb-3 m-1 p-4">
+            <div id="proyecto2" class="card mb-3 m-1 p-4">
                 <img src="recursos/300ppi/negativo_muni.png" class="card-img-top" alt="Logo Negativo de la Municipalidad de Rosario">
                 <div class="card-body">
                     <h5 class="card-title">Newletters del Instituto del Alimento</h5>
                     <p class="card-text">Construcción de Newletters para el Instituto del Alimento</p>
-                    <p><small><a href="https://github.com/leondalvez/trabajofinal" class="text-white">Podés hacer click sobre éste link para conocer éste Proyecto</a></small> </p>
+                    <p><small><a href="https://github.com/leondalvez/trabajofinal">Podés hacer click sobre éste link para conocer éste Proyecto</a></small> </p>
                 </div>
             </div>
 
-            <div class="card text-black bg-warning mb-3 m-1 p-4">
-                <img src="recursos/300ppi/onca.png" class="card-img-top" alt="Logo en negativo de Onca Films">
+            <div id="proyecto3" class="card mb-3 m-1 p-4">
+                <img src="recursos/300ppi/onca.png" class="card-img-top p-5" alt="Logo en negativo de Onca Films">
                 <div class="card-body">
                     <h5 class="card-title">Onca Films</h5>
                     <p class="card-text">Microemprendimiento familiar de contenido audiovisual. Contribuyendo como productor y editor de contenido para redes</p>
-                    <p><small><a href="https://www.instagram.com/oncafilms/" class="text-black">Podés hacer click sobre éste link para conocer éste Proyecto</a></small> </p>
+                    <p><small><a href="https://www.instagram.com/oncafilms/"">Podés hacer click sobre éste link para conocer éste Proyecto</a></small> </p>
                 </div>
             </div>
 

@@ -20,8 +20,75 @@
 
 #skill>.card {
     flex: 150px;
+    background-color: rgb(45, 70, 185);
+    color: white;
+    border-color: rgb(240, 55, 165);
+    border-width: 5px;
+    border-style: solid;
 }
 
 #educacion>.card {
     flex: 150px;
+}
+
+#edu1 {
+    border-width: 10px;
+    background-color: rgb(240, 55, 165);
+    color: white;
+}
+
+#edu2 {
+    border-width: 10px;
+    background-color: rgb(45, 70, 185);
+    color: white;
+}
+
+#edu3 {
+    border-width: 10px;
+    background-color: rgb(240, 55, 165);
+    color: white;
+}
+
+BODY {
+    font-family: 'Radio Canada', sans-serif;
+    background-color: rgb(30, 49, 99);
+}
+
+.navbar {
+    background-color: rgb(240, 55, 165);
+    color: white;
+}
+
+#miexperiencia {
+    color: white;
+}
+
+#descripcion {
+    background-color: rgb(45, 70, 185);
+}
+
+#fondoExperiencia {
+    background-color: rgb(240, 55, 165);
+    color: white;
+    padding: 20px;
+}
+
+#displayDescripcion {
+    background-color: white;
+    color: rgb(30, 49, 99);
+}
+
+#proyecto1 {
+    color: white;
+    background-color: rgb(45, 70, 185);
+}
+
+#proyecto2 {
+    color: white;
+    background-color: rgb(240, 55, 165);
+}
+
+#proyecto3 {
+    color: rgb(240, 55, 165);
+    background-color: rgb(45, 70, 185);
 }
