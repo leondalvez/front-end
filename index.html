@@ -44,28 +44,34 @@
         </div>
 
         <div class="btn-group p-3" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-primary" href="#contacto">E-mail</button>
-            <button type="button" class="btn btn-info">Linkedin</button>
-            <button type="button" class="btn btn-success">SignIN</button>
+            <button id="botonNav" type="button" class="btn border-white" href="#contacto">E-mail</button>
+            <button id="botonNav" type="button" class="btn border-white">Linkedin</button>
+            <button id="botonNav" type="button" class="btn border-white">SignIN</button>
         </div>
     </nav>
 
     <!-- Carrusel de imagen - carousel-->
 
-    <div class="carousel slide x-left-2 x-rigth-2" id="mainSlader" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="recursos/Recurso1.png" alt="Slice1" class="d-block w-100">
+                <img src="recursos/Carousel/slice1.png" class="d-block w-100" alt="...">
             </div>
-
             <div class="carousel-item">
-                <img src="recursos/Recurso2.png" alt="Slice2" class="d-block w-100">
+                <img src="recursos/Carousel/slice2.png" class="d-block w-100" alt="...">
             </div>
-
             <div class="carousel-item">
-                <img src="recursos/recurso4.JPG" alt="Slice3" class="d-block w-100">
+                <img src="recursos/Carousel/slice3.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <!--Saludo - Greetins -->
@@ -94,7 +100,7 @@
 
             <div class="row align-items-left">
                 <div class="col-sm">
-                    <img src="recursos/4x/Recurso 13@4x.png" class="w-100 mx-auto d-block img-fluid" alt="Foto_de_perfil">
+                    <img src="recursos/FotoPerfil/Recurso 13@4x.png" class="w-100 mx-auto d-block img-fluid mt-3 mb-2" alt="Foto_de_perfil">
                 </div>
 
                 <div class="col-sm-8 p-3 text-light text-center mt-3">
@@ -157,7 +163,7 @@
                 </div>
             </div>
             <div class="card m-1" id="fondoExperiencia">
-                <img src="recursos/Hard_and_soft/vivalapizza.jpg" class="card-img-top" alt="Logo Viva La Pizza">
+                <img src="recursos/Experiencia/vivalapizza.jpg" class="card-img-top" alt="Logo Viva La Pizza">
                 <div class="card-body">
                     <h5 class="card-title">Camarero</h5>
                     <p class="card-text"> Camarero Turno Noche. <br>Referencias: Claudio Casalegno (Encargado) <br>Contacto: e-mail de claudio
@@ -202,7 +208,7 @@
             </div>
 
             <div class="card m-1" id="edu2">
-                <img src="recursos/Hard_and_soft/Crehana.png" class="card-img-top" alt="Logo Crehana">
+                <img src="recursos/Educación/Crehana.png" class="card-img-top" alt="Logo Crehana">
                 <div class="card-body">
                     <h5 class="card-title">Ilustración Digital</h5>
                     <p class="card-text">Certificado en ilustración digital con Illustrator.</p>
@@ -211,7 +217,7 @@
 
 
             <div class="card m-1">
-                <img src="recursos/Hard_and_soft/isidroaliau.jpg" class="card-img-top" alt="Foto Escuela">
+                <img src="recursos/Educación/isidroaliau.jpg" class="card-img-top" alt="Foto Escuela">
                 <div class="card-body" id="edu1">
                     <h5 class="card-title">Isidro Aliau</h5>
                     <p class="card-text">Primaria en la escuala Isidro Aliau Nº124</p>
@@ -219,7 +225,7 @@
             </div>
 
             <div class="card  m-1" id="edu2">
-                <img src="recursos/Hard_and_soft/649.jpg" class="card-img-top" alt="Logo esc.649">
+                <img src="recursos/Educación/649.jpg" class="card-img-top" alt="Logo esc.649">
                 <div class="card-body">
                     <h5 class="card-title">Don Jose de San Martin</h5>
                     <p class="card-text">Secundaria en la Escuela Nº649 "Don jose de San Martín" con Orientación a Teoría y Gestión de las Organizaciones.</p>
@@ -227,7 +233,7 @@
             </div>
 
             <div class="card m-1" id="edu1">
-                <img src="recursos/Hard_and_soft/Facu_UNR_315x81.png" class="card-img-top" alt="Logo Psicologia unr">
+                <img src="recursos/Educación/Facu_UNR_315x81.png" class="card-img-top" alt="Logo Psicologia unr">
                 <div class="card-body">
                     <h5 class="card-title">Facultad de Psicología</h5>
                     <p class="card-text">Si bien no llegue a concluir la carrera en Psicología, cinco años de cursado me dejaron una caja de herramientas valiosas.</p>
@@ -235,7 +241,7 @@
             </div>
 
             <div class="card m-1" id="edu2">
-                <img src="recursos/Hard_and_soft/epav.jpg" class="card-img-top" alt="Logo EPAV">
+                <img src="recursos/Educación/epav.jpg" class="card-img-top" alt="Logo EPAV">
                 <div class="card-body">
                     <h5 class="card-title">Escuela Provincial de Artes Visuales</h5>
                     <p class="card-text">Actualmente curso la Tecnicatura en Diseño Gráfico y Comunicación Visual.</p>
@@ -389,25 +395,25 @@
                 <div class="card-body">
                     <h5 class="card-title">Porfolio Argentina Programa</h5>
                     <p class="card-text">Ésta página es un proyecto final del Argentina Programa para adquirir certificación en Programación FullStack Junior</p>
-                    <p><small><a href="https://github.com/leondalvez/trabajofinal">Podés hacer click sobre éste link para conocer éste Proyecto</a></small> </p>
+                    <p><small><a class="text-white" href="https://github.com/leondalvez/trabajofinal">Podés hacer click sobre éste link para conocer éste Proyecto</a></small> </p>
                 </div>
             </div>
 
             <div id="proyecto2" class="card mb-3 m-1 p-4">
-                <img src="recursos/300ppi/negativo_muni.png" class="card-img-top" alt="Logo Negativo de la Municipalidad de Rosario">
+                <img src="recursos/Proyectos/negativo_muni.png" class="card-img-top" alt="Logo Negativo de la Municipalidad de Rosario">
                 <div class="card-body">
                     <h5 class="card-title">Newletters del Instituto del Alimento</h5>
                     <p class="card-text">Construcción de Newletters para el Instituto del Alimento</p>
-                    <p><small><a href="https://github.com/leondalvez/trabajofinal">Podés hacer click sobre éste link para conocer éste Proyecto</a></small> </p>
+                    <p><small><a class="text-white" href="https://github.com/leondalvez/trabajofinal">Podés hacer click sobre éste link para conocer éste Proyecto</a></small> </p>
                 </div>
             </div>
 
             <div id="proyecto3" class="card mb-3 m-1 p-4">
-                <img src="recursos/300ppi/onca.png" class="card-img-top p-5" alt="Logo en negativo de Onca Films">
+                <img src="recursos/Proyectos/onca.png" class="card-img-top p-5" alt="Logo en negativo de Onca Films">
                 <div class="card-body">
                     <h5 class="card-title">Onca Films</h5>
                     <p class="card-text">Microemprendimiento familiar de contenido audiovisual. Contribuyendo como productor y editor de contenido para redes</p>
-                    <p><small><a href="https://www.instagram.com/oncafilms/"">Podés hacer click sobre éste link para conocer éste Proyecto</a></small> </p>
+                    <p><small><a  href="https://www.instagram.com/oncafilms/">Podés hacer click sobre éste link para conocer éste Proyecto</a></small> </p>
                 </div>
             </div>
 
